@@ -17,7 +17,7 @@
     }
 
     var minutes, seconds, count, counter, timer;
-    count = 900; //seconds
+    count = 15; //seconds
     counter = setInterval(timer, 1000);
 
     function timer() {
@@ -30,6 +30,8 @@
             return;
         }
         document.getElementById("timer").innerHTML = 'Next refresh in ' + minutes + ':' + seconds + ' ';
+        document.getElementById("timer").style.fontFamily = 'Arial';
+        document.getElementById("myP").style.fontSize = 'small';
         if (count === 0) {
             location.reload();
         }
