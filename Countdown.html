@@ -1,50 +1,23 @@
 ﻿
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title></title>
- 
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data-Refresh Tableau</title>
 </head>
+
 <body>
-    <script type='text/javascript'>
-    function checklength(i) {
-        'use strict';
-        if (i < 10) {
-            i = "0" + i;
-        }
-        return i;
-    }
+    <h1>Hello Tableau!</h1>
+    <input type="number" name="refreshTime" id="refreshTime" placeholder="Time in Seconds">
+    <button id="btn">Start Refresh!</button>
+    <button id="btn-stop">Stop Refresh!</button>
+    <p id="info">Please specify seconds till refresh</p>
 
-    var minutes, seconds, count, counter, timer;
-    count = 900; //seconds
-    counter = setInterval(timer, 1000);
-
-    function timer() {
-        'use strict';
-        count = count - 1;
-        minutes = checklength(Math.floor(count / 60));
-        seconds = checklength(count - minutes * 60);
-        if (count < 0) {
-            clearInterval(counter);
-            return;
-        }
-        document.getElementById("timer").innerHTML = 'Next Refresh in ' + minutes + ':' + seconds + ' ';
-        document.getElementById("timer").style.fontFamily = "Arial";
-        document.getElementById("timer").style.fontSize = "small";
-        if (count === 0) {
-            location.reload();
-         
-            //window.opener.document.location.reload(true);
-            //window.parent.document.getElementById("timer");
-            //window.parent.location = document.referrer;
-            //window.parent.location.reload();
-        }
-    }
-
-    </script>
-
-    <span id="timer"></span>
-
+    <script src="js/tableau-extensions-1.latest.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
