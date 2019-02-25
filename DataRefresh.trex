@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <dashboard-extension id="com.aspenmedicalproducts.extensions.datarefresh" extension-version="1.0.0">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>Countdown</description>
+    <author name="Julian Grace" email="jgrace@aspenmp.com" organization="AspenMP" website="https://www.aspenmp.com"/>
+    <min-api-version>1.0</min-api-version>
+    <source-location>
+      <url>https://gittableauextensions.github.io/extensions/</url>
+    </source-location>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAQAAAD41aSMAAAFfklEQVR4Ae3dbWjVdR/H8feZc2syobpMCxEs0c1rEhRREHmTkG5amhL1rChlM0VFri71KjVvyiijoGBYVM+kgu40XTryiTdLvNxshdCTVhrUgxGOTN05m/uFkFAx/+x4/np+3+/5vL7P/w8+7xpnZ2cT8UhEREREREREplCJFVXU4cw99PCFkQRVtHKau7zNHwgmElycPxCsJkiY30KCS/NbTZAwv4UEl+a3myBhfgMJrrs0f1IC+/NfvBYqTcxvPsEqAiH+BAnzX7wVGLY2KYGJ+Z8BUALNf1US7KEygvn3Jc+vBPbnV4I05leCDBN4mDVsp4UOTtFDjgEGyNHDKTrYw3ZWM5/byKQ5vxJUMJ2NfEkPYYh3mlY2MI0KzT/UBLsHTXAjT/IZvxOu8M7wKU9w/aDz701hfscJhrOAneQIKVyWT5hPueYfaoJb2MwvhJTvZzYyRvNDcoI63iVLuErXy9vUpTm//QRFOM0PsFbzK0HC/Ergf34l0Pwj+SiKAB9QTQmq4ztCJHeCWkrMLH4jRHQ9zKSELKKPENnleJwSsYYQ6a0C/zYQIr41OLeOEPmtxrEmgoF7CqcWcsFEgH4ewqE7OEswcmeYgjOjOUkwdN/zLxwpYz/B2O0lgxv/Ixi8/+DE3fSZDJDlThyo4ATB6HVSjnkbCYbvWYyrIWs6wHkmYNougvH7GMPuJzi4qZh11EWAIxjVQHByszCpjZDHtdPIRCqoYBJLOJ7CbOk9/wAGTSUM+c6yiL/L0Mi5FGZP6/n3Ys6HecxzH4OZlkKCtJ6/A2NuJpfCD0Ca0giQyvOzjPb6mbd2Li/D1wUMn+7z/4sp3xCGeE0kWVpogNSe34EhdXkMNJEkNYUGSPH5NT7fgKsgSWWhAVJ8/nrMOOoyQBtGjMrr0w+TSFJbaIAUn9/PDZjwWF4DLSHJskIDpPr8RzDhDUIed5wMl5NJeDVVjOe/7vM90MZ8XyQW7fltGFCZ98/AzjGNwczgfBoBUnx+L8OJ3u1XNFEjGf4qw9IU5k//+XVE79Er/lr9NDVUUkkty+hMZfj0n7+Q6K0nFPP0KYn3XAd4h+i1uA7wOdHrcB3g/0TvJ9cBThK9X10H6CZ6Z10HOEP0+l0H6CN6wfkpgAIogAIogAIogAIogAIogIiIiIiIiL4RUwAFUAAFUAAFUAAFUAAFUAAFUAAFUAAFUAAFUAAF8HAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAAKoAA51/NniZr+ZlwEfnQdoIvofes6QCfR+8p1gENEb5/rAC1E7y3XAZqJ3irXAVYQvTmuA8wmehNcBxhP9IaRdTv/ecowoMNtgGOY8JrbANsw4UG3ARowYSR9LufPUY0RR1wGOIwZL7gMsAkzprgMMBlDjusfsEqX3hFajiljnL0SynETxux2FWAn5sx0FWA6BrW5mf8gJs11E6Aeozr0ArS4FroIMA/D9pufvxXTao1/VrSXiRj3kukAWzBvBCfNzv8DVTjQwIDJ+QeYhROvmAywFTfKDX5XfIBhODLO2C9udDMWZ+Zywcz8/dTj0BIzARbj1PMm5l+HY83Rz/8mrpXxftTz76AMvCdojvi//jJKwoYo53+OEtIU2YvSfhZTYuZG9K1ZN/WUoHEcjuRNh7GUqHJeZqDI73i+yDBKWn0R/7pEFw+AjGBrEX6xL8sWqviT1F7jH9+3Mol/kAW0X6PP+czjMmTOVX5ldJDZIMlmsIv0P9yeYyfTGSIZzUraU/yis5xRSN7+zWbaCvi/IcdhNjGZgkg1c3iVY/Tm8TcdjrGNBqpJkZRxK/WspJkWDtFJF91kydJNF50cooVmVjCb8ZQhIiIiIiISrT8A53nsWYviF10AAAAASUVORK5CYII=</icon>
+    <context-menu>
+      <configure-context-menu-item />
+    </context-menu>
+  </dashboard-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">Dynamic Date Parameter</text>
+    </resource>
+  </resources>
+</manifest>
