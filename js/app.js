@@ -1,5 +1,5 @@
 // When the DOM has loaded, run the function load
-document.addEventListener("DOMContentLoaded", load);
+document.addEventListener("DOMContentLoaded", load2);
 
 // Grab the input box, the buttons and paragraph
 const input = document.querySelector("#refreshTime");
@@ -64,7 +64,17 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 5,
+    var fiveMinutes = 60 * 1,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
+
+
+function load2() {
+    //initialise the tableau object
+    tableau.extensions.initializeAsync().then(() => {
+                refreshInterval = setInterval(() => {
+                    initTableau();
+                }, 120);          
+    });
+}
