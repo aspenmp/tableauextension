@@ -33,7 +33,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 2,
+    var fiveMinutes = 60 * 1,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
@@ -44,6 +44,6 @@ function load2() {
     tableau.extensions.initializeAsync().then(() => {
                 refreshInterval = setInterval(() => {
                     initTableau();
-                }, 120);          
+                }, 60);          
     });
 }
