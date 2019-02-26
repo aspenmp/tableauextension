@@ -33,12 +33,11 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-//window.onload = function () {
-//    var fiveMinutes = 60 * 2,
-//        display = document.querySelector('#time');
-//    startTimer(fiveMinutes, display);
-//};
-
+window.onload = function () {
+    var fiveMinutes = 60 * 2,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
 //function load2() {
 //    //initialise the tableau object
 //    tableau.extensions.initializeAsync().then(() => {
