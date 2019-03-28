@@ -121,8 +121,8 @@
       return this.settings.seconds - secondsElapsed;
     },
     _drawCountdownLabel: function (secondsElapsed) {
-        //this.ariaText.text(secondsLeft);
-        this.ariaText.text(Math.floor(secondsLeft / 60) + 1);
+        this.ariaText.text(secondsLeft);
+        //this.ariaText.text(Math.floor(secondsLeft / 60) + 1);
       this.pen.font = this.settings.fontWeight + " " + this.settings.fontSize + "px " + this.settings.fontFamily;
       var secondsLeft = this._secondsLeft(secondsElapsed),
           label = secondsLeft === 1 ? this.settings.label[0] : this.settings.label[1],
